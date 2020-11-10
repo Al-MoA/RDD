@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../templates/static/css/style.css">
+    <link rel="stylesheet" href="../templates/static/css/flexboxgrid.css">
+    <link rel="stylesheet" href="../templates/static/css/slider.css">
+    <script type="text/javascript" src="../templates/static/js/carusel.js"> </script>
+    <title>Recetas Diente Dulce</title>
+</head>
+
+<body>
+    <img src="../templates/static/img/Logo.jpg" height="260" width="600" alt="Imagen no disponible">
+    <div class="cuerpo">
+    <h1>Recetas diente dulce</h1>
+    <p>Bienvenido a una pequeña página donde encontrarás recetas que te endulzarán el día</p>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="../templates/static/img/c1.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="../templates/static/img/c2.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="../templates/static/img/c3.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="../templates/static/img/c4.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="../templates/static/img/c5.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="../templates/static/img/c6.jpeg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <script>
+        var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+    </script>
+
+    <h2>Sobre Nosotros</h2>
+    <p>Creamos esta página con el fin de saciar tu diente dulce con recetas fáciles y rápidas de tus postres y pasteles para que disfrutes tanto de su preparación, como de su sabor. 
+    </p>
+    <p>
+        ¡Te damos la bienvenida a Recetas Diente Dulce!
+    </p>
+    <h3>Recetas Disponibles</h3>
+    <ul>
+        <li><a href="../templates/Receta1.html"> Panqueques</a></li>
+        <li><a href="../templates/Receta2.html"> Leche Asada</a></li>
+    </ul>
+    </div>
+</body>
+
+<footer>
+    <div class="footer">
+    <p> <em> Imagenes utilizadas con propositos educacionales, no somos dueños de ellas</em></p>
+    <a href="../templates/Subscripcion.html"> Suscribete aquí</a>
+    </div>
+</footer>
+
+</html>

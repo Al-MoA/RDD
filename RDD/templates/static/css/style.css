@@ -1,0 +1,48 @@
+@import url("fontstyle.css");
+
+* {
+  margin: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: Roboto-Medium, Arial, "sans-serif";
+  height: 300px;
+}
+
+body {
+  font-family: HindSiliguri-Regular, Arial, "sans-serif";
+  background-image: url("../img/Fondo2.jpg");
+}
+
+footer {
+  font-family: HindSiliguri-Regular, Arial, "sans-serif";
+  color: lightslategray;
+}
+
+h1 {
+  color: black;
+  font-size: xx-large;
+}
+
+h2,
+h3 {
+  color: black;
+  font-size: x-large;
+}
+
+p {
+  color: rgb(81, 102, 109);
+  font-size: medium;
+}
+
+.cuerpo {
+  background: rgb(209, 242, 235);
+}
+.footer {
+  background: rgb(234, 242, 248);
+}

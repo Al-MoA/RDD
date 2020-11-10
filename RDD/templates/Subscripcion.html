@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/static/css/style.css">
+    <script type="text/javascript" src="../templates/static/js/sha1.js"> </script>
+    <script>
+        function cifradoCuestionario(){
+            var cifradoNombre = document.getElementById("Nombre");
+            cifradoNombre.value = SHA1(cifradoNombre.value);
+
+            var cifradoAP = document.getElementById("ApellidoP");
+            cifradoAP.value = SHA1(cifradoAP.value);
+            
+            var cifradoAM = document.getElementById("ApellidoM");
+            cifradoAM.value = SHA1(cifradoAM.value);
+            
+            var cifradoFN = document.getElementById("FechaNacimiento");
+            cifradoFN.value = SHA1(cifradoFN.value);
+        }
+    </script>
+    <title>Subscripcion</title>
+</head>
+
+<body>
+    <div class="cuerpo">
+    <h1>Subscribete para recibir una notificación cuando publiquemos recetas nuevas</h1>
+    <form action="Exito.html" method="GET">
+        <label for="Nombre">Nombre: </label>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
+        <br>
+        <label for="ApellidoP">Apellido Parterno:</label>
+        <input type="text" name="ApellidoP" id="ApellidoP" placeholder="Apellido Paterno">
+        <br>
+        <label for="ApellidoM">Apellido Materno:</label>
+        <input type="text" name="ApellidoM" id="ApellidoM" placeholder="Apellido Materno">
+        <br>
+        <label for="Correo">Correo Electronico:</label>
+        <input type="email" name="Correo" id="Correo" placeholder="lorem@ipsum.com">
+        <br>
+        <label for="FN">Fecha de Nacimiento:</label>
+        <input type="date" name="FechaNacimiento" id="FN" ">
+        <br>
+        <button type=" submit" onclick="cifradoCuestionario()">Enviar Formulario</button>
+    </form>
+    </div>
+</body>
+
+<footer>
+    <div class="footer">
+    <a href="../templates/index.html">Volver a la página principal</a>
+    <p> <em> Imagenes utilizadas con propositos educacionales, no somos dueños de ellas</em></p>
+    </div>
+</footer>
+
+</html>
